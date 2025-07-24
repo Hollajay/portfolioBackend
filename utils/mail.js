@@ -29,7 +29,7 @@ const sendMail = async ({ from, subject, email_to, body_message }) => {
         return reject(err);
       } else {
         console.log(info);
-        return resolve(info);
+        return resolve(info)
       }
     });
   });

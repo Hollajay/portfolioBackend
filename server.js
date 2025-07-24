@@ -12,7 +12,7 @@ App.use(express.json());
 
 // CORS configuration
 App.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: process.env.FRONTEND_URL ,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
@@ -40,5 +40,5 @@ mongoose.connect(process.env.MONGO_URL)
     });
   })
   .catch((err) => {
-    console.log('Database connection error:', err.message);
+    console.log('Database connection error:', err.message)
   });

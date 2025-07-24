@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const clientSchema = mongoose.Schema({
   firstName: {
     type: String,
-    // required: [true, 'Name must be filled'],
-  
+    // required: [true, 'Name must be filled'], 
   },
   email: {
     type: String,
@@ -14,7 +13,6 @@ const clientSchema = mongoose.Schema({
   subject: {
     type: String,
     required: [true, 'Subject must be filled'],
-
   },
   message: {
     type: String,
